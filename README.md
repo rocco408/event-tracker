@@ -87,11 +87,6 @@ A client may request the number of events within a window of time preceding the 
 time window in seconds. The `getRecentEventCount` method takes an event ID and time window size (prior to and including 
 the current time).
 
-Here is an example requesting the number of events within the last 1 minute.
-```java
-long numEvents = tracker.getRecentEventCount("https://www2.purpleair.com/", timeWindowInSecs);
-```
-
 Here is an example requesting event counts over the last 20 seconds.
 ```java
 long numEvents = tracker.getRecentEventCount("https://www2.purpleair.com/", 20);
